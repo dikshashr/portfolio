@@ -1,7 +1,44 @@
 html, body{
     margin: 0%;
     padding: 0%;
+    overflow-x: hidden;
+    display: grid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media  screen and (min-width: 880px) {
+    .introduction{
+        grid-auto-flow: column;
+        font-size: 2rem;  
+
+    }
+    .header{
+        grid-auto-flow: column;
+    }
+    .footer{
+        grid-auto-flow: column;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .introduction{
+        grid-auto-flow: row;
+        font-size: 1rem;  
+    }
+    img{
+        width: 80vw;
+        justify-self: center;
+    }
+    .header{
+        width: 100%;
+        align-content: stretch;
+        align-items: start;
+        grid-auto-flow: column;
+    }
+    .footer{
+        grid-auto-flow: row;
+    }
+    
 }
 
 div .border{
@@ -12,6 +49,8 @@ div .border{
 a.about{
     transition-property: color;
     color: black;
+    align-self:start;
+    display: grid;
 }
 
 a.about:hover{
@@ -32,53 +71,39 @@ p:hover{
 img{
     max-width: 100%;
     max-height: 100%;
-    float: left;
-    display: inline;
 }
 
 h1{
-    text-align: left;
     color: rgb(22, 227, 159);
     font-style: italic;
-    padding-top: 5%;
 }
 
 h3{
-    text-align: left;
     color: black;
-    padding: 12%;
 }
 
 h3 span{
     color:rgb(22, 227, 159);
+    
 
 }
 
 .introduction{
-    text-align: right;
-    margin-left: 300px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    padding-left: 25px;
-    clear: right;
-
+    padding: 2rem;
 }
 
 .header {
-    position: relative;
     top: 0;
-    width: 100%;
+    display: grid;
+    width: 100vw;
     padding: 0.5px 0;
     background-color: aquamarine;
     font-size: 14px;
     font-weight: 900;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-direction: row;
-    box-sizing: border-box;
-    flex-wrap: wrap;
+    justify-content: space-between;
     
   }
 
@@ -96,30 +121,36 @@ a.home {
   }
 
 .footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 0.5px 0;
+    width: 98vw;
     background-color: aquamarine;
-    font-size: 14px;
-    font-weight: 900;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-
-.footer li{
-    display: inline-block;
-    padding: 20px;
+    font-size: 1rem;
+    justify-self: center;
+    justify-content: start;
+    display: grid;
+    padding: 0;
+    gap: 1.5rem;
 }
 
 a.contact{
     color: black;
     transition-property: color;
+    text-decoration: none;
 
 }
 
 a.contact:hover{
     color: white;
+}
+
+.contacts{
+    align-content: space-around;
+    grid-auto-flow: column;
+    display: grid;
+    align-self: center;
+    grid-gap: 1.5rem;
+    padding: 1rem;
+}
+
+.footer h2{
+    padding: 1rem;
 }
