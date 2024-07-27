@@ -1,0 +1,280 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    display: grid;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    justify-items: center;
+   
+}
+
+.header {
+    top: 0;
+    color: white;
+    display: grid;
+    width: 100vw;
+    background-color: rgb(22, 22, 22);
+    font-size: 0.9rem;
+    font-weight: 600;
+    grid-auto-flow: row; 
+  }
+
+a.home{
+    transition-property: color;
+    color: rgb(255, 255, 255);
+    display: grid;
+    font-size: 0.8rem;
+    padding: 1.2rem;
+}
+
+a.home:hover{
+    color: grey;
+}
+
+ul {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: space-evenly;
+    justify-self: start;
+    gap: 0.7rem;
+}
+
+.main{
+    text-align: center;
+    color: white;
+    background-image: url(https://i.pinimg.com/564x/20/6d/de/206dde5b43822b09a3695be6af6435b6.jpg);
+    background-repeat: no-repeat;
+    background-size: 68vw;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    background-position: center;
+    background-blend-mode: screen;
+    padding: 2rem;
+}
+
+h3.intro{
+    font-style: italic;
+    font-size: 3rem;
+    padding: 2.5rem;
+}
+
+h1{
+    font-size: 7rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+
+button.info{
+    border-radius: 0.3rem;
+    padding: 1rem;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+}
+
+button.info:hover{
+    color: rgb(0, 0, 0);
+    transition: color;
+}
+
+h3.gym{
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+}
+
+ul.from{
+    display: grid;
+    grid-auto-flow: row;
+    justify-self: center;
+    list-style: none;
+    grid-template-columns: 1fr;
+}
+
+.classes{
+    display: grid;
+    width: 100vw;
+    grid-auto-flow: column;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 3rem; 
+    font-size: 2rem;  
+    background-color: rgb(28, 28, 28);
+}
+
+p.class{
+    text-align: center;
+    display: grid;
+    justify-self: center;
+    grid-auto-flow: column;
+    font-size: 4rem;
+    color: white;
+    padding: 0.5rem;
+    align-self: center;
+    font-weight: 900;
+    justify-self: center;
+}
+
+p.section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 5rem;
+    text-align: justify;
+    color: white;
+    background-color: black;
+}
+
+a.cardio{
+    width: 30vw;
+    height: 25vw;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://i.pinimg.com/564x/e4/8a/89/e48a89e11a92ab2a5d8615d759c292ba.jpg);
+}
+
+a.airyoga{
+    width: 30vw;
+    height: 25vw;
+    text-align: center;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/736x/ce/bf/35/cebf353924f7b4682474645ea2a0c85a.jpg);
+    background-repeat: no-repeat;
+
+}
+
+a.lifting{
+    width: 30vw;
+    height: 25vw;
+    text-align: center;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/564x/13/27/bb/1327bb29d272acb33bbb45b544d2ce85.jpg);
+    background-repeat: no-repeat;
+
+}
+
+a.press{
+    width: 30vw;
+    height: 25vw;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://i.pinimg.com/564x/bc/d8/28/bcd8283779fa74d1735143974325a30c.jpg);
+}
+
+.about{
+    background-color: black;
+    display: grid;
+    background-image: url(https://i.pinimg.com/736x/06/88/82/068882c2f25ee01c028cf65542194105.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: right;
+    color: white;
+    padding: 9rem;
+    font-size: 1.5rem;
+
+}
+
+ul.col{
+    display: grid;
+    grid-auto-flow: row;
+    list-style: none;
+    justify-content: center;
+    justify-self: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    padding: 1rem;
+
+}
+
+.change{
+    text-align: center;
+    font-size: 3rem;
+    padding: 4rem;
+}
+
+button.join{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+button.join:hover{
+    color: black;
+    transition: color;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p.space{
+    text-align: end;
+    padding: 0.5rem;
+    text-wrap: balance;
+    text-align: right;
+    text-indent: 0;
+}
+
+.fa {
+    font-size: 1rem;
+    width: 4vw;
+    height: 5vw;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  
+  /* Facebook */
+.fa-facebook {
+    color: white;
+}
+  
+  /* Twitter */
+.fa-twitter {
+    color: white;
+}
+ 
+  /* Instagram*/
+.fa-instagram {
+    color: white;
+}
+
+.socialmeadia{
+    display: grid;
+    grid-auto-flow: column;
+    justify-self: center;
+    padding: 0.3rem;
+}
+
+.footer{
+    display: grid;
+    width: 100vw;
+    justify-self: center;
+    background-color: black;
+}
+
+.contact{
+    display: grid;
+    color: white;
+    justify-self: center;
+    font-size: 1.5rem;
+}
