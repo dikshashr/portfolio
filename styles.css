@@ -44,7 +44,6 @@ div .border{
 a.about{
     transition-property: color;
     color: black;
-    align-self:start;
     display: grid;
 }
 
@@ -98,8 +97,7 @@ h3 span{
     background-color: aquamarine;
     font-size: 14px;
     font-weight: 900;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
   }
 
 .header li {
@@ -117,7 +115,7 @@ h3 span{
     font-weight: 900;
     justify-content: space-between;
     padding: 1rem;
-    grid-auto-flow: rows;
+    grid-auto-flow: row;
     grid-gap: 0.5rem;
 
 }
@@ -161,3 +159,6 @@ h3 span{
 button.contact{
     grid-auto-flow: row;
 }
+
+
+    
